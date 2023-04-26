@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+   <display-name>Donation</display-name>
+  <welcome-file-list>
+   
+    
+    
+    <welcome-file>indexController</welcome-file>
+  </welcome-file-list>
+ 	<servlet>
+		<servlet-name>ListCategoryController</servlet-name>
+		<servlet-class>categoryController.ListCategoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListCategoryController</servlet-name>
+		<url-pattern>/manageCategory</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>deleteCategory</servlet-name>
+		<servlet-class>categoryController.deleteCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteCategory</servlet-name>
+		<url-pattern>/deleteC</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>deleteMany</servlet-name>
+		<servlet-class>categoryController.deleteManyC</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteMany</servlet-name>
+		<url-pattern>/deleteManyC</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>AddCategory</servlet-name>
+		<servlet-class>categoryController.AddCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCategory</servlet-name>
+		<url-pattern>/addCategory</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EditCategory</servlet-name>
+		<servlet-class>categoryController.EditCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCategory</servlet-name>
+		<url-pattern>/editCategory</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchCategory</servlet-name>
+		<servlet-class>categoryController/SearchCategory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchCategory</servlet-name>
+		<url-pattern>/seachCategory</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddFoundation</servlet-name>
+		<servlet-class>FoundationController/addFoundation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddFoundation</servlet-name>
+		<url-pattern>/addFoundation1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteFoundation</servlet-name>
+		<servlet-class>FoundationController.deleteFoundation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteFoundation</servlet-name>
+		<url-pattern>/deleteF</url-pattern>
+	</servlet-mapping> 
+	<servlet>
+		<servlet-name>searchFoundation</servlet-name>
+		<servlet-class>FoundationController.searchFoundation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>searchFoundation</servlet-name>
+		<url-pattern>/searchF</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
